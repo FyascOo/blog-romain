@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
-import { AnalogWelcomeComponent } from './analog-welcome.component';
-
 @Component({
-  selector: 'blog-home',
+  selector: 'blog-index',
   standalone: true,
-  imports: [AnalogWelcomeComponent],
-  template: ` <blog-analog-welcome /> `,
+  imports: [],
+  template: `
+    Hello World
+  `,
 })
-export default class HomeComponent {}
+export default class IndexComponent {}
