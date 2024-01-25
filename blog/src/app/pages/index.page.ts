@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    Hello World
+    home work
   `,
 })
 export default class IndexComponent {}
