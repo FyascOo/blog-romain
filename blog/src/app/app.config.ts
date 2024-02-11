@@ -5,5 +5,10 @@ import { ApplicationConfig } from '@angular/core';
 import { provideClientHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideFileRouter(), provideClientHydration(), provideHttpClient(withFetch()), provideContent(withMarkdownRenderer())],
+  providers: [
+    provideFileRouter(),
+    provideClientHydration(),
+    provideHttpClient(withFetch()),
+    provideContent(withMarkdownRenderer()),
+  ],
 };

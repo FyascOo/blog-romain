@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: BelleAllure;
+  src: url('/assets/pecita/Pecita.otf') format('opentype');
+}
+
+html,
+body {
+  display: block;
+  height: 100%;
+  font-family: 'BelleAllure', 'arial', sans-serif;
+  font-size: x-large;
+}
+h1 {
+  font-size: xxx-large;
+}
+
+h2 {
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+div.analog-markdown > section.section-impair > p > img {
+  margin: 0 25px 20px 0;
+  width: 300px;
+  height: 400px;
+  float: inline-start;
+}
+
+div.analog-markdown > section.section-pair > p > img {
+  margin: 0 0 20px 25px;
+  width: 300px;
+  height: 400px;
+  float: inline-end;
+}
+
+.section-impair {
+  padding: 20px;
+  background-color: #ffd699;
+}
+
+.section-pair {
+  padding: 20px;
+  background-color: white;
+}
+
+.separation {
+  display: block;
+  height: 150px;
+  width: 100%;
+  background-image: url('/assets/svg/section.svg');
+}
+
+.separation-pair {
+  display: block;
+  height: 150px;
+  width: 100%;
+  background-image: url('/assets/svg/section.svg');
+  transform: scaleY(-1);
+}

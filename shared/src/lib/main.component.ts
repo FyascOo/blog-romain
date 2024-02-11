@@ -8,7 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <ng-content />
   `,
   host: {
-    class: 'flex justify-center items-center flex-1 bg-[#ffd699]',
+    class: 'flex flex-1',
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

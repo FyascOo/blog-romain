@@ -6,10 +6,10 @@ import { OngletButtonComponent } from './onglet-button.component';
   standalone: true,
   imports: [OngletButtonComponent],
   template: `
-    <blog-romain-onglet-button />
+    <blog-romain-onglet-button [data]="{ icon: 'home', slug: '/' }" />
     <blog-romain-onglet-button [data]="{ icon: 'pets', slug: '/faunes', text: 'Faunes' }" />
     <blog-romain-onglet-button [data]="{ icon: 'grass', slug: '/flores', text: 'Flores' }" />
-    <blog-romain-onglet-button [data]="{ icon: 'home_pin', slug: '/villes', text: 'Carte de ville' }" />
+    <blog-romain-onglet-button [data]="{ icon: 'home_pin', slug: '/villes', text: 'Carte des villes' }" />
     <blog-romain-onglet-button [data]="{ icon: 'explore', slug: '/pays', text: 'Carte des pays' }" />
     <blog-romain-onglet-button [data]="{ icon: 'group', slug: '/personnages-secondaires', text: 'Personnages secondaires' }" />
   `,

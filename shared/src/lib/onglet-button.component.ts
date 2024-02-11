@@ -9,7 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   template: `
     <button
       [routerLink]="data.slug"
-      routerLinkActive="test"
+      routerLinkActive="remove-bottom"
       [routerLinkActiveOptions]="{ exact: true }"
       class="p-1 rounded-3xl bg-[#fff5e6] w-full">
       <div class="flex items-center justify-center w-[120px] h-12 rounded-3xl bg-[#ffd699] hover:bg-[#ffccff] w-full">
@@ -27,11 +27,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   },
   styles: [
     `
-      .test {
-        background-image: linear-gradient(#ffd699, #ffd699);
-        background-size: 98% 30px;
-        background-repeat: no-repeat;
-        background-position: center bottom;
+      .remove-bottom {
+        background: linear-gradient(#fff5e6, #fff5e6, #fff5e6, transparent, transparent, transparent);
       }
     `,
   ],
